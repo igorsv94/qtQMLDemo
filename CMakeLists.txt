@@ -30,12 +30,16 @@ if(ANDROID)
     add_library(qml-tableView SHARED
       main.cpp
       qml.qrc
+      client.cpp
+      server.cpp
     )
 else()
     add_executable(qml-tableView
       persontable.cpp
       main.cpp
       qml.qrc
+      client.cpp
+      server.cpp
     )
 endif()
 

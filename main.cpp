@@ -3,6 +3,7 @@
 #include <QQmlContext>
 
 #include "persontable.h"
+#include "ClientServerChooser.h"
 
 int main(int argc, char *argv[])
 {
@@ -17,6 +18,10 @@ int main(int argc, char *argv[])
     if (!obj && url == objUrl)
       QCoreApplication::exit(-1);
   }, Qt::QueuedConnection);
+
+  ClientServerChooser *chooser = new
+      ClientServerChooser(QHostAddress::LocalHost, 4242);
+  (void) chooser;
 
   PersonTable *persons = new PersonTable;
   engine.rootContext()->setContextProperty("persons", persons);
