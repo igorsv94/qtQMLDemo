@@ -54,10 +54,8 @@ C1.TableView {
          MenuItem {
              text: "R&emove"
              onTriggered: {
-//                    tableView.selection.select(tableView.currentRow);
-//                    console.log("selected index = " + tableView.currentRow )
-//                    dModel.remove_data(tableView.currentRow)
-//                    dModel.decrementRowCount()
+                 persons.removeRow(tableView.currentRow.toFixed(0))
+                 tableView.update()
              }
          }
      }
@@ -82,13 +80,7 @@ C1.TableView {
                  Connections {
                      target: loaderEditor.item
                      onEditingFinished: {
-//                         persons.setData()
-//                         persons.name = loaderEditor.item.text
-//                         console.log("out:", styleData.row, loaderEditor.item.text, styleData.column, styleData.role)
                          persons.updateCell(styleData.row, loaderEditor.item.text, styleData.column)
-//                           dModel.modify_data(styleData.row, styleData.column, loaderEditor.item.text)
-//                           Person.name = loaderEditor.item.text
-//                         dataModel.setProperty(styleData.row, styleData.role, loaderEditor.item.text)
                          tableView.update()
                      }
                  }

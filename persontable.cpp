@@ -72,19 +72,15 @@ bool PersonTable::setData(const QModelIndex &index, const QVariant &value, int r
   switch (role) {
   case ID:
     m_persons[index.row()].iid = value.toInt();
-//    qDebug() << "[" << index << "].iid set as " << value;
     break;
   case NAME:
     m_persons[index.row()].name = value.toString();
-//    qDebug() << "[" << index << "].name set as " << value;
     break;
   case PHONE:
     m_persons[index.row()].phone = value.toInt();
-//    qDebug() << "[" << index << "].phone set as " << value;
     break;
   case COUNTRY:
     m_persons[index.row()].country = value.toInt();
-//    qDebug() << "[" << index << "].country set as " << value;
     break;
 
   default:
@@ -98,8 +94,8 @@ bool PersonTable::setData(const QModelIndex &index, const QVariant &value, int r
 
 Qt::ItemFlags PersonTable::flags(const QModelIndex &index) const
 {
-    if (!index.isValid())
-        return Qt::ItemIsEnabled;
+  if (!index.isValid())
+    return Qt::ItemIsEnabled;
 
-    return QAbstractTableModel::flags(index) | Qt::ItemIsEditable;
+  return QAbstractTableModel::flags(index) | Qt::ItemIsEditable;
 }

@@ -31,25 +31,27 @@ public:
   };
   explicit PersonTable(QObject *parent = nullptr);
 
-//protected:
   Q_INVOKABLE virtual int rowCount(const QModelIndex &parent = QModelIndex()) const override;
   Q_INVOKABLE virtual int columnCount(const QModelIndex &parent = QModelIndex()) const override;
 
   Q_INVOKABLE virtual QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
-//  Q_INVOKABLE virtual bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole);
   Q_INVOKABLE QHash<int,QByteArray> roleNames() const override;
 
   Q_INVOKABLE void updateCell(int index, QVariant val, int role) {
-//    qDebug() << "updateCell values:" << index << val << role;
-
     auto ind = QAbstractTableModel::index(index, role);
-//    qDebug() << "index:" << ind;
-
     this->setData(ind, val, role);
   }
 
+  Q_INVOKABLE void removeRow(int row) {
+    beginRemoveRows(QModelIndex(), row, row + 1);
+    m_persons.removeAt(row);
+    endRemoveRows();
+
+    emit dataChanged(index(row-1,0), index(row-1, columnCount()-1));
+  }
+
   Q_INVOKABLE virtual bool setData(const QModelIndex &index, const QVariant &value, int role) override;
-  virtual Qt::ItemFlags flags(const QModelIndex &index) const;
+  virtual Qt::ItemFlags flags(const QModelIndex &index) const override;
 
   Q_INVOKABLE void add();
 
