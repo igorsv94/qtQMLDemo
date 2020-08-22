@@ -1,0 +1,23 @@
+{
+	"BUILD_DIR" : "/Users/igorsv94/workspace/homework/qml-tableView/build/qml-tableView_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/igorsv94/workspace/homework/qml-tableView/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/igorsv94/workspace/homework/qml-tableView/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/igorsv94/workspace/homework/qml-tableView",
+	"CMAKE_SOURCE_DIR" : "/Users/igorsv94/workspace/homework/qml-tableView",
+	"INCLUDE_DIR" : "/Users/igorsv94/workspace/homework/qml-tableView/build/qml-tableView_autogen/include",
+	"INPUTS" : 
+	[
+		"/Users/igorsv94/workspace/homework/qml-tableView/PersonsView.qml",
+		"/Users/igorsv94/workspace/homework/qml-tableView/main.qml"
+	],
+	"LOCK_FILE" : "/Users/igorsv94/workspace/homework/qml-tableView/build/CMakeFiles/qml-tableView_autogen.dir/AutoRcc_qml_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "qml" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_qml.cpp",
+	"RCC_EXECUTABLE" : "/usr/local/Cellar/qt/5.14.1/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/igorsv94/workspace/homework/qml-tableView/build/CMakeFiles/qml-tableView_autogen.dir/AutoRcc_qml_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/igorsv94/workspace/homework/qml-tableView/qml.qrc",
+	"VERBOSITY" : 0
+}

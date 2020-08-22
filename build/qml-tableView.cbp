@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="qml-tableView"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\Cellar\;CMake Files\..\..\..\..\..\usr\local\Cellar\qt\;CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\;CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\;CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5\;CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Quick\;CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5QmlModels\;CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Qml\;CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Network\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/igorsv94/workspace/homework/qml-tableView/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/igorsv94/workspace/homework/qml-tableView/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/igorsv94/workspace/homework/qml-tableView/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="qml-tableView">
+				<Option output="/Users/igorsv94/workspace/homework/qml-tableView/build/qml-tableView" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/igorsv94/workspace/homework/qml-tableView/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_QML_DEBUG"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_QUICK_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_QMLMODELS_LIB"/>
+					<Add option="-DQT_QML_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add directory="/Users/igorsv94/workspace/homework/qml-tableView/build"/>
+					<Add directory="/Users/igorsv94/workspace/homework/qml-tableView"/>
+					<Add directory="/Users/igorsv94/workspace/homework/qml-tableView/build/qml-tableView_autogen/include"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/./mkspecs/macx-clang"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtQuick.framework"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtQuick.framework/Headers"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtQmlModels.framework"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtQmlModels.framework/Headers"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtQml.framework"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtQml.framework/Headers"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtNetwork.framework"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtNetwork.framework/Headers"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 qml-tableView"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="qml-tableView/fast">
+				<Option output="/Users/igorsv94/workspace/homework/qml-tableView/build/qml-tableView" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/igorsv94/workspace/homework/qml-tableView/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_QML_DEBUG"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_QUICK_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_QMLMODELS_LIB"/>
+					<Add option="-DQT_QML_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add directory="/Users/igorsv94/workspace/homework/qml-tableView/build"/>
+					<Add directory="/Users/igorsv94/workspace/homework/qml-tableView"/>
+					<Add directory="/Users/igorsv94/workspace/homework/qml-tableView/build/qml-tableView_autogen/include"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/./mkspecs/macx-clang"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtQuick.framework"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtQuick.framework/Headers"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtQmlModels.framework"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtQmlModels.framework/Headers"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtQml.framework"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtQml.framework/Headers"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtNetwork.framework"/>
+					<Add directory="/usr/local/Cellar/qt/5.14.1/lib/QtNetwork.framework/Headers"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 qml-tableView/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="qml-tableView_autogen">
+				<Option working_dir="/Users/igorsv94/workspace/homework/qml-tableView/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 qml-tableView_autogen"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/igorsv94/workspace/homework/qml-tableView/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/build/qml-tableView_autogen/EWIEGA46WW/qrc_qml.cpp">
+			<Option target="qml-tableView"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/build/qml-tableView_autogen/EWIEGA46WW/qrc_qml.cpp.rule">
+			<Option target="qml-tableView"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/build/qml-tableView_autogen/mocs_compilation.cpp">
+			<Option target="qml-tableView"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/main.cpp">
+			<Option target="qml-tableView"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/persontable.cpp">
+			<Option target="qml-tableView"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/persontable.h">
+			<Option target="qml-tableView"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/qml.qrc">
+			<Option target="qml-tableView"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/qml.qrc">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5/Qt5Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5/Qt5ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5/Qt5ModuleLocation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Quick/Qt5QuickConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Quick\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Quick/Qt5QuickConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Quick\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QCocoaIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QMacHeifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QMacJp2Plugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5QmlModels/Qt5QmlModelsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5QmlModels\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5QmlModels/Qt5QmlModelsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5QmlModels\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Qml/Qt5QmlConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Qml/Qt5QmlConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Qml/Qt5QmlConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Qml/Qt5Qml_QDebugMessageServiceFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Qml/Qt5Qml_QLocalClientConnectionFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Qml/Qt5Qml_QQmlDebugServerFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Qml/Qt5Qml_QQmlDebuggerServiceFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Qml/Qt5Qml_QQmlInspectorServiceFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Qml/Qt5Qml_QQmlNativeDebugConnectorFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Qml/Qt5Qml_QQmlNativeDebugServiceFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Qml/Qt5Qml_QQmlPreviewServiceFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Qml/Qt5Qml_QQmlProfilerServiceFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Qml/Qt5Qml_QQuickProfilerAdapterFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Qml/Qt5Qml_QTcpServerConnectionFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Network/Qt5NetworkConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/Users/igorsv94/workspace/homework/qml-tableView/../../../../../usr/local/Cellar/qt/5.14.1/lib/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\qt\5.14.1\lib\cmake\Qt5Network\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

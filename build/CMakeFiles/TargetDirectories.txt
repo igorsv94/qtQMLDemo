@@ -1,0 +1,4 @@
+/Users/igorsv94/workspace/homework/qml-tableView/build/CMakeFiles/rebuild_cache.dir
+/Users/igorsv94/workspace/homework/qml-tableView/build/CMakeFiles/edit_cache.dir
+/Users/igorsv94/workspace/homework/qml-tableView/build/CMakeFiles/qml-tableView.dir
+/Users/igorsv94/workspace/homework/qml-tableView/build/CMakeFiles/qml-tableView_autogen.dir
