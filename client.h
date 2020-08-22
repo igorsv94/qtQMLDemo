@@ -5,13 +5,15 @@
 #include <QTcpSocket>
 #include <QHostAddress>
 
+#include "global.h"
+
 class Client : public QObject
 {
   Q_OBJECT
 
 public:
   explicit Client(QObject *parent = 0);
-  ~Client();
+  virtual ~Client();
 
   void connectToServer(QHostAddress, int);
   static bool serverIsAvaliable(QHostAddress, int);
@@ -22,6 +24,9 @@ public slots:
   void disconnect(QAbstractSocket::SocketState) { _socket.disconnectFromHost();
                                                   _isConnected = false; };
   void error(QAbstractSocket::SocketError) {};
+
+signals:
+  void sendSync(QByteArray);
 
 private:
   QTcpSocket   _socket;

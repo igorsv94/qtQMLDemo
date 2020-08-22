@@ -46,7 +46,9 @@ bool Client::serverIsAvaliable(QHostAddress addr, int port)
 QByteArray Client::onReadyRead()
 {
   QByteArray bytes = _socket.readAll();
-  qDebug() << bytes;
+//  qDebug() << bytes;
+
+  emit sendSync(bytes);
   return bytes;
 }
 

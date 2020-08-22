@@ -36,6 +36,7 @@ C1.TableView {
          anchors.fill: parent
          acceptedButtons: Qt.RightButton
          onClicked: {
+             tableView.update()
              cMenu.open()
          }
      }

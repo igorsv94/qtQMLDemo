@@ -23,6 +23,14 @@ void Server::startListen(QHostAddress addr, int port)
           this, SLOT(onNewConnection()));
 }
 
+int Server::sendData(QByteArray &bytes)
+{
+  for (QTcpSocket* socket : _sockets) {
+    return socket->write(bytes);
+  }
+  return -1;
+}
+
 void Server::onNewConnection()
 {
  QTcpSocket *clientSocket = _server.nextPendingConnection();
@@ -31,12 +39,12 @@ void Server::onNewConnection()
          this, SLOT(onSocketStateChanged(QAbstractSocket::SocketState)));
 
   _sockets.push_back(clientSocket);
-  for (QTcpSocket* socket : _sockets) {
-    socket->write(
-          QByteArray::fromStdString(
-            clientSocket->peerAddress().toString().toStdString() +
-            " connected to server !\n"));
-  }
+//  for (QTcpSocket* socket : _sockets) {
+//    socket->write(
+//          QByteArray::fromStdString(
+//            clientSocket->peerAddress().toString().toStdString() +
+//            " connected to server !\n"));
+//  }
 }
 
 void Server::onSocketStateChanged(QAbstractSocket::SocketState socketState)
@@ -51,5 +59,7 @@ QByteArray Server::onReadyRead()
 {
   QTcpSocket* sender = static_cast<QTcpSocket*>(QObject::sender());
   QByteArray bytes = sender->readAll();
+
+  emit sendSync(bytes);
   return bytes;
 }

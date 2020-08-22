@@ -8,31 +8,53 @@
 #include "server.h"
 #include "client.h"
 
-class ClientServerChooser
+class ClientServerChooser: public QObject
 {
+  Q_OBJECT
 
 public:
   enum Type {
     SERVER = 0,
     CLIENT
   };
-  ClientServerChooser(QHostAddress addr, int port)
+  ClientServerChooser(QHostAddress addr, int port, QObject *parent = nullptr)
+    :QObject(parent)
   {
     qDebug() << __PRETTY_FUNCTION__;
     if (Client::serverIsAvaliable(addr, port)) {
       type = CLIENT;
       client = new Client();
       client->connectToServer(addr, port);
+
+      connect(client, &Client::sendSync,
+              this, &ClientServerChooser::receiveSync);
     } else {
+      type = SERVER;
       server = new Server();
       server->startListen(addr, port);
-      type = SERVER;
+
+      connect(server, &Server::sendSync,
+              this, &ClientServerChooser::receiveSync);
     }
   };
 
-  ~ClientServerChooser() { if (type == SERVER) delete server;
-                           else delete client; }
+  virtual ~ClientServerChooser()
+  {
+    if (type == SERVER) delete server;
+    else delete client;
+  }
 
+public slots:
+  void sendSync(QByteArray bytes) {
+    if (type == SERVER) {
+      server->sendData(bytes);
+    } else {
+      client->sendData(bytes);
+    }
+  }
+
+signals:
+  void receiveSync(QByteArray);
 
 private:
   Client *client;

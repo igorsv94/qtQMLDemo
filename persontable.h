@@ -4,19 +4,9 @@
 #include <QAbstractTableModel>
 #include <QList>
 #include <QDebug>
+#include <QDataStream>
 
-struct Person {
-  enum Country{
-    Russia = 8,
-    USA = 1,
-    Ukraine = 38
-  };
-
-  int32_t iid;
-  QString name;
-  uint64_t phone;
-  int32_t country;
-};
+#include "global.h"
 
 class PersonTable: public QAbstractTableModel
 {
@@ -43,17 +33,24 @@ public:
   }
 
   Q_INVOKABLE void removeRow(int row) {
-    beginRemoveRows(QModelIndex(), row, row + 1);
+    beginRemoveRows(QModelIndex(), row, row);
     m_persons.removeAt(row);
     endRemoveRows();
 
-    emit dataChanged(index(row-1,0), index(row-1, columnCount()-1));
+    QModelIndex index = createIndex(0, 0, static_cast<void *>(0));
+    emit dataChanged(index, index);
   }
 
   Q_INVOKABLE virtual bool setData(const QModelIndex &index, const QVariant &value, int role) override;
   virtual Qt::ItemFlags flags(const QModelIndex &index) const override;
 
   Q_INVOKABLE void add();
+
+public slots:
+  void receiveSync(QByteArray);
+
+signals:
+  void sendSync(QByteArray bytes);
 
 private:
   QList<Person> m_persons;

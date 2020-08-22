@@ -19,13 +19,20 @@ int main(int argc, char *argv[])
       QCoreApplication::exit(-1);
   }, Qt::QueuedConnection);
 
+//  qRegisterMetaTypeStreamOperators<Person>("Person");
   ClientServerChooser *chooser = new
       ClientServerChooser(QHostAddress::LocalHost, 4242);
   (void) chooser;
 
   PersonTable *persons = new PersonTable;
-  engine.rootContext()->setContextProperty("persons", persons);
 
+  QObject::connect(chooser, &ClientServerChooser::receiveSync,
+                   persons, &PersonTable::receiveSync);
+
+  QObject::connect(persons, &PersonTable::sendSync,
+          chooser, &ClientServerChooser::sendSync);
+
+  engine.rootContext()->setContextProperty("persons", persons);
   engine.load(url);
 
   return app.exec();

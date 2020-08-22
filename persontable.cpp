@@ -1,9 +1,87 @@
+#include <QCoreApplication>
 #include "persontable.h"
+
+QDataStream &operator<<(QDataStream &out, const Person &a)
+{
+  out << a.iid;
+  out << a.name;
+  out << a.phone;
+  out << a.country;
+  return out;
+}
+
+QDataStream &operator>>(QDataStream &in, Person &a)
+{
+  in >> a.iid;
+  in >> a.name;
+  in >> a.phone;
+  in >> a.country;
+  return in;
+}
 
 PersonTable::PersonTable(QObject *parent)
   :QAbstractTableModel(parent)
 {
+  connect(this, &PersonTable::dataChanged,
+          this, [=]() {
+    if (m_persons.size() < 1) {
+      return;
+    }
+    QByteArray byteArray;
+    QDataStream stream(&byteArray, QIODevice::WriteOnly);
+
+//    stream << m_persons;
+    qDebug() << "\nlambda";
+    int i = 0;
+    for (Person &it: m_persons) {
+//      stream << it.iid << it.name << it.phone << it.country;
+      stream << it;
+      qDebug() << QCoreApplication::applicationPid() << "[" << i++ << "]: " << it.iid << it.name;
+    }
+
+    emit sendSync(byteArray);
+  });
+
   m_persons.append({1, "cock", 8888, 38});
+  m_persons.append({2, "shit cock", 666, 1});
+}
+
+void PersonTable::receiveSync(QByteArray bytes)
+{
+  QDataStream stream(&bytes, QIODevice::ReadOnly);
+  QList<Person> tmp_persons;
+
+  while( !stream.atEnd() ) {
+      Person p;
+      stream >> p;
+      tmp_persons.append( p );
+  }
+
+  qDebug() << "\nreceiveSync:";
+  if (tmp_persons != m_persons) {
+
+    if (m_persons.size() > tmp_persons.size()) {
+      for (int i = 0; i < tmp_persons.size(); ++i) {
+        if (!(m_persons[i] == tmp_persons[i])) {
+          removeRow(i);
+          return;
+        }
+      }
+      removeRow(m_persons.size() - 1);
+      return;
+    } else if (m_persons.size() < tmp_persons.size()) {
+      for (int i = 0; i < tmp_persons.size() - m_persons.size(); ++i) add();
+      m_persons = tmp_persons;
+      return;
+    } else {//equals
+      qDebug() << "edit same size" << m_persons.size();
+      m_persons = tmp_persons;
+    }
+    QModelIndex indexFrom = createIndex(0, 0, static_cast<void *>(0));
+    QModelIndex indexTo = createIndex(m_persons.size(), columnCount() - 1, static_cast<void *>(0));
+    qDebug() << "indexex: form:" << indexFrom << ", to " << indexTo;
+    emit dataChanged(indexFrom, indexTo);
+  }
 }
 
 int PersonTable::rowCount(const QModelIndex &parent) const

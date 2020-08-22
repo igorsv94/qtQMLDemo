@@ -32,6 +32,8 @@ if(ANDROID)
       qml.qrc
       client.cpp
       server.cpp
+      ClientServerChooser.cpp
+      global.cpp
     )
 else()
     add_executable(qml-tableView
@@ -40,6 +42,8 @@ else()
       qml.qrc
       client.cpp
       server.cpp
+      ClientServerChooser.cpp
+      global.cpp
     )
 endif()
 
