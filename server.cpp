@@ -8,7 +8,6 @@ Server::Server(QObject *parent) :
   QObject(parent),
   _server(this)
 {
-  qDebug() << __PRETTY_FUNCTION__ ;
 }
 
 Server::~Server()
@@ -39,12 +38,6 @@ void Server::onNewConnection()
          this, SLOT(onSocketStateChanged(QAbstractSocket::SocketState)));
 
   _sockets.push_back(clientSocket);
-//  for (QTcpSocket* socket : _sockets) {
-//    socket->write(
-//          QByteArray::fromStdString(
-//            clientSocket->peerAddress().toString().toStdString() +
-//            " connected to server !\n"));
-//  }
 }
 
 void Server::onSocketStateChanged(QAbstractSocket::SocketState socketState)

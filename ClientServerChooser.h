@@ -8,6 +8,10 @@
 #include "server.h"
 #include "client.h"
 
+/* Client-Server chooser.
+ * Selects a type of application (client or server).
+ * Sends synchronization's data between client and server.
+ */
 class ClientServerChooser: public QObject
 {
   Q_OBJECT
@@ -20,7 +24,6 @@ public:
   ClientServerChooser(QHostAddress addr, int port, QObject *parent = nullptr)
     :QObject(parent)
   {
-    qDebug() << __PRETTY_FUNCTION__;
     if (Client::serverIsAvaliable(addr, port)) {
       type = CLIENT;
       client = new Client();

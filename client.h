@@ -7,6 +7,9 @@
 
 #include "global.h"
 
+/* Very simple Client class,
+ * that uses QTcpSocket and communicates with a server
+ */
 class Client : public QObject
 {
   Q_OBJECT

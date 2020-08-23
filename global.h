@@ -1,8 +1,10 @@
 #ifndef GLOBAL_H
 #define GLOBAL_H
 
-#include <QDataStream>
+#include <QString>
 
+/* Basic struct for tableView
+ */
 struct Person {
 //  enum Country{
 //    Russia = 8,

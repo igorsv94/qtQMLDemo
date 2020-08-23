@@ -7,6 +7,9 @@
 
 #include "global.h"
 
+/* Very simple server class, based on QTcpServer.
+ * Communicates with clients
+ */
 class Server : public QObject
 {
   Q_OBJECT
@@ -14,8 +17,8 @@ class Server : public QObject
 public:
   explicit Server(QObject *parent = nullptr);
   virtual ~Server();
-  void startListen(QHostAddress addr, int port);
 
+  void startListen(QHostAddress addr, int port);
   int sendData(QByteArray &);
 
 public slots:

@@ -8,6 +8,9 @@
 
 #include "global.h"
 
+/* PersonTable class. Stores a table's data.
+ * Has an interface to synchronize table's data with external sources
+ */
 class PersonTable: public QAbstractTableModel
 {
   Q_OBJECT

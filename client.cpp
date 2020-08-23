@@ -8,7 +8,6 @@ Client::Client(QObject *parent) :
   QObject(parent),
   _isConnected(false)
 {
-  qDebug() << __PRETTY_FUNCTION__ ;
 }
 
 Client::~Client()
@@ -32,6 +31,8 @@ void Client::connectToServer(QHostAddress addr, int port)
   }
 }
 
+/* Static method. Checks that the server is listening or not
+ */
 bool Client::serverIsAvaliable(QHostAddress addr, int port)
 {
   QTcpSocket socket;
@@ -46,7 +47,6 @@ bool Client::serverIsAvaliable(QHostAddress addr, int port)
 QByteArray Client::onReadyRead()
 {
   QByteArray bytes = _socket.readAll();
-//  qDebug() << bytes;
 
   emit sendSync(bytes);
   return bytes;

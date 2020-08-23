@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
       QCoreApplication::exit(-1);
   }, Qt::QueuedConnection);
 
-//  qRegisterMetaTypeStreamOperators<Person>("Person");
   ClientServerChooser *chooser = new
       ClientServerChooser(QHostAddress::LocalHost, 4242);
   (void) chooser;
